@@ -9,7 +9,6 @@ export default function TimerChallenge({ title, TargetTime }) {
 
   if (TimeRemaining <= 0) {
     clearInterval(timer.current);
-    // setTimeRemaining(TargetTime * 1000);
     dialogRef.current.open();
   }
 
